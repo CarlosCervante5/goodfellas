@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoodFellas Pomade - Hermandad de Cuidado Personal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="assets/images/logotipo_dorado-e1594501755441-5226375-1.webp" alt="GoodFellas Pomade" class="logo-img">
+                </a>
+                
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="productos.html" class="nav-link">Productos</a></li>
+                    <li><a href="#manifiesto" class="nav-link">Manifiesto</a></li>
+                    <li><a href="#elaboracion" class="nav-link">Elaboración</a></li>
+                    <li><a href="#mayoreo" class="nav-link">Mayoreo</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobile-sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <img src="assets/images/logotipo_dorado-e1594501755441-5226375-1.webp" alt="GoodFellas Pomade" class="logo-img">
+            </div>
+            <button class="sidebar-close" id="sidebar-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <ul class="sidebar-nav-list">
+                <li><a href="#inicio" class="sidebar-nav-link active">Inicio</a></li>
+                <li><a href="productos.html" class="sidebar-nav-link">Productos</a></li>
+                <li><a href="#manifiesto" class="sidebar-nav-link">Manifiesto</a></li>
+                <li><a href="#elaboracion" class="sidebar-nav-link">Elaboración</a></li>
+                <li><a href="#mayoreo" class="sidebar-nav-link">Mayoreo</a></li>
+                <li><a href="#contacto" class="sidebar-nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-background">
+            <!-- Video de fondo con tema apropiado para GoodFellas -->
+            <div class="hero-video">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/images/The Gang United.mp4" type="video/mp4">
+                    <!-- Fallback para navegadores que no soportan video -->
+                    <div class="hero-bg-image"></div>
+                </video>
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-badge">
+                    <span>HERMANDAD GOODFELLAS</span>
+                </div>
+                <h1 class="hero-title">EL ESTILO QUE DEFINE TU PERSONALIDAD</h1>
+                <p class="hero-description">
+                    Descubre la autenticidad, la lealtad y la calidad que solo GoodFellas puede ofrecerte. 
+                    Únete a la hermandad que transforma tu rutina de cuidado personal.
+                </p>
+                <a href="productos.html" class="btn btn-primary">
+                    <span>Descubre Más</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Carousel Section - Inspirado en Guinness -->
+    <section class="products-carousel" id="productos">
+        <div class="carousel-container">
+            <div class="carousel-header">
+                <h2 class="carousel-title">NUESTROS PRODUCTOS</h2>
+            </div>
+            
+            <div class="carousel-wrapper">
+                <div class="carousel-track">
+                    <!-- Producto 1: Pomada Original -->
+                    <div class="carousel-group">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/original140gWEB-2697956.webp" alt="Pomada Original" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-badge">ORIGINAL</div>
+                                <h3 class="product-name">POMADA ORIGINAL</h3>
+                                <p class="product-description">El clásico que nunca pasa de moda</p>
+                                <button class="product-btn">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 2: Pomada Textura -->
+                    <div class="carousel-group">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/t4extura140gWEB-2697856.webp" alt="Pomada Textura" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-badge">TEXTURA</div>
+                                <h3 class="product-name">POMADA TEXTURA</h3>
+                                <p class="product-description">Acabado natural con volumen</p>
+                                <button class="product-btn">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 3: Pomada Strong -->
+                    <div class="carousel-group">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/strong140gWEB-2697915.webp" alt="Pomada Strong" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-badge">STRONG</div>
+                                <h3 class="product-name">POMADA STRONG</h3>
+                                <p class="product-description">Máxima fijación y duración</p>
+                                <button class="product-btn">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 4: Shampoo Azul -->
+                    <div class="carousel-group">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/SHAMPOOAZUL-1-5293342.webp" alt="Shampoo Azul" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-badge">PREMIUM</div>
+                                <h3 class="product-name">SHAMPOO AZUL</h3>
+                                <p class="product-description">Limpieza profunda y cuidado</p>
+                                <button class="product-btn">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 5: Shampoo Rojo -->
+                    <div class="carousel-group">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/SHAMPOOROJO-1-5293239.webp" alt="Shampoo Rojo" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-badge">INTENSO</div>
+                                <h3 class="product-name">SHAMPOO ROJO</h3>
+                                <p class="product-description">Limpieza intensa y revitalizante</p>
+                                <button class="product-btn">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 6: Pomada 1LT -->
+                    <div class="carousel-group">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/1lt-2908257.webp" alt="Pomada 1LT" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-badge">GRANDE</div>
+                                <h3 class="product-name">POMADA 1LT</h3>
+                                <p class="product-description">Tamaño familiar para uso prolongado</p>
+                                <button class="product-btn">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 7: Próximamente -->
+                    <div class="carousel-group">
+                        <div class="product-card empty-card">
+                            <div class="product-image coming-soon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-badge">PRÓXIMAMENTE</div>
+                                <h3 class="product-name">NUEVO PRODUCTO</h3>
+                                <p class="product-description">Muy pronto en la hermandad</p>
+                                <button class="product-btn" disabled>PRÓXIMAMENTE</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 8: Próximamente -->
+                    <div class="carousel-group">
+                        <div class="product-card empty-card">
+                            <div class="product-image coming-soon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-badge">PRÓXIMAMENTE</div>
+                                <h3 class="product-name">NUEVO PRODUCTO</h3>
+                                <p class="product-description">Muy pronto en la hermandad</p>
+                                <button class="product-btn" disabled>PRÓXIMAMENTE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-nav">
+                    <button class="carousel-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="carousel-dots">
+                <button class="dot active" data-slide="0"></button>
+                <button class="dot" data-slide="1"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manifiesto Section - Inspirado en Guinness -->
+    <section class="manifesto" id="manifiesto">
+        <div class="manifesto-container">
+            <div class="manifesto-content">
+                <div class="manifesto-text">
+                    <div class="manifesto-badge">
+                        <span>MANIFIESTO</span>
+                    </div>
+                    <h2 class="manifesto-title">GOODFELLAS AT HOME</h2>
+                    <p class="manifesto-description">
+                        Somos una hermandad que comparte el gusto por la libertad, la autenticidad y la lealtad.
+                    </p>
+                    <p class="manifesto-description">
+                        Promovemos la cultura del cuidado personal y el autoconocimiento, porque afirmamos que todo empieza por uno mismo, por como te sientes y el cómo te percibes.
+                    </p>
+                    <p class="manifesto-description">
+                        Nos dedicamos a elaborar productos de calidad suprema para que puedas cuidar de ti de la mejor manera.
+                    </p>
+                    <p class="manifesto-description manifesto-highlight">
+                        Somos el amigo que nunca abandona, el que respeta creencias y apoya tus ideas, aquél que está en todo momento, somos auténticos, somos leales, somos GoodFellas.
+                    </p>
+                    <div class="manifesto-cta">
+                        <span class="manifesto-welcome">BIENVENIDO A LA HERMANDAD</span>
+                    </div>
+                </div>
+            </div>
+            <div class="manifesto-image">
+                <div class="manifesto-bg-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elaboración Section - Inspirada en Guinness Storehouse -->
+    <section class="elaboration" id="elaboracion">
+        <div class="elaboration-container">
+            <div class="elaboration-content">
+                <div class="elaboration-text">
+                    <h2 class="elaboration-title">¿CÓMO ESTÁN ELABORADOS NUESTROS PRODUCTOS?</h2>
+                    <p class="elaboration-description">
+                        Únete a nosotros más allá de las puertas en la casa de la pomada más popular del mundo. Si quieres sumergirte verdaderamente en la historia única, corazón y alma de la pomada más icónica de México, solo hay un lugar al que ir: su hogar.
+                    </p>
+                    <p class="elaboration-description">
+                        Nuestro proceso de elaboración contiene siete pasos inolvidables de sabores, aromas y sensaciones en un método que ha estado creando productos para el cuidado personal durante más de 5 años.
+                    </p>
+                    <div class="elaboration-cta">
+                        <span class="elaboration-more">Descubre Más ></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wholesale Section -->
+    <section class="wholesale" id="mayoreo">
+        <div class="wholesale-container">
+            <div class="wholesale-content">
+                <div class="wholesale-text">
+                    <h2 class="wholesale-title">¿TIENES UNA BARBERÍA O SALÓN DE BELLEZA?</h2>
+                    <p class="wholesale-description">
+                        Compra nuestros productos a precio de mayoreo y ofrece a tus clientes la mejor calidad de GoodFellas.
+                    </p>
+                    <a href="#contacto" class="btn btn-primary wholesale-btn">
+                        <span>Comprar a Mayoreo</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="wholesale-image">
+                    <img src="assets/images/Captura_de_Pantalla_2021-02-22_a_las_14.34.29-5407643.webp" alt="Barbería GoodFellas" class="wholesale-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logotipo_dorado-e1594501755441-5226375-1.webp" alt="GoodFellas Pomade" class="logo-img">
+                    </div>
+                    <p class="footer-description">
+                        Productos de calidad suprema para el cuidado personal masculino. 
+                        Ingredientes naturales, aromas únicos, experiencia memorable.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="#manifiesto">Manifiesto</a></li>
+                        <li><a href="#elaboracion">Elaboración</a></li>
+                        <li><a href="#mayoreo">Mayoreo</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Redes Sociales</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Goodfellas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario - GoodFellas Pomade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logotipo_dorado-e1594501755441-5226375-1.webp" alt="GoodFellas Pomade" class="logo-img">
+                </a>
+                
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="inventario.html" class="nav-link active">Inventario</a></li>
+                    <li><a href="index.html#manifiesto" class="nav-link">Manifiesto</a></li>
+                    <li><a href="index.html#elaboracion" class="nav-link">Elaboración</a></li>
+                    <li><a href="index.html#mayoreo" class="nav-link">Mayoreo</a></li>
+                    <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobile-sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <img src="assets/images/logotipo_dorado-e1594501755441-5226375-1.webp" alt="GoodFellas Pomade" class="logo-img">
+            </div>
+            <button class="sidebar-close" id="sidebar-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <ul class="sidebar-nav-list">
+                <li><a href="index.html" class="sidebar-nav-link">Inicio</a></li>
+                <li><a href="inventario.html" class="sidebar-nav-link active">Inventario</a></li>
+                <li><a href="index.html#manifiesto" class="sidebar-nav-link">Manifiesto</a></li>
+                <li><a href="index.html#elaboracion" class="sidebar-nav-link">Elaboración</a></li>
+                <li><a href="index.html#mayoreo" class="sidebar-nav-link">Mayoreo</a></li>
+                <li><a href="index.html#contacto" class="sidebar-nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="inventory-hero">
+        <div class="inventory-hero-content">
+            <div class="container">
+                <h1 class="inventory-hero-title">INVENTARIO DE PRODUCTOS</h1>
+                <p class="inventory-hero-subtitle">Gestiona tu stock de productos GoodFellas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inventory Controls -->
+    <section class="inventory-controls">
+        <div class="container">
+            <div class="controls-wrapper">
+                <div class="search-section">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Buscar productos...">
+                    </div>
+                    <button class="btn btn-primary" id="addProductBtn">
+                        <i class="fas fa-plus"></i>
+                        Agregar Producto
+                    </button>
+                </div>
+                
+                <div class="filter-section">
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="">Todas las categorías</option>
+                        <option value="pomadas">Pomadas</option>
+                        <option value="shampoos">Shampoos</option>
+                        <option value="accesorios">Accesorios</option>
+                    </select>
+                    
+                    <select id="statusFilter" class="filter-select">
+                        <option value="">Todos los estados</option>
+                        <option value="disponible">Disponible</option>
+                        <option value="agotado">Agotado</option>
+                        <option value="bajo-stock">Bajo Stock</option>
+                    </select>
+                    
+                    <button class="btn btn-secondary" id="exportBtn">
+                        <i class="fas fa-download"></i>
+                        Exportar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inventory Grid -->
+    <section class="inventory-grid">
+        <div class="container">
+            <div class="inventory-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Total Productos</h3>
+                        <span class="stat-number" id="totalProducts">24</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Disponibles</h3>
+                        <span class="stat-number" id="availableProducts">18</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Bajo Stock</h3>
+                        <span class="stat-number" id="lowStockProducts">4</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Agotados</h3>
+                        <span class="stat-number" id="outOfStockProducts">2</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inventory-table-wrapper">
+                <table class="inventory-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="selectAll">
+                            </th>
+                            <th>Producto</th>
+                            <th>Categoría</th>
+                            <th>Stock</th>
+                            <th>Precio</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inventoryTableBody">
+                        <!-- Product rows will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Agregar Producto</h2>
+                <button class="modal-close" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="productForm">
+                    <div class="form-group">
+                        <label for="productName">Nombre del Producto</label>
+                        <input type="text" id="productName" name="productName" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="productCategory">Categoría</label>
+                            <select id="productCategory" name="productCategory" required>
+                                <option value="">Seleccionar categoría</option>
+                                <option value="pomadas">Pomadas</option>
+                                <option value="shampoos">Shampoos</option>
+                                <option value="accesorios">Accesorios</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="productPrice">Precio</label>
+                            <input type="number" id="productPrice" name="productPrice" step="0.01" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="productStock">Stock</label>
+                            <input type="number" id="productStock" name="productStock" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="productMinStock">Stock Mínimo</label>
+                            <input type="number" id="productMinStock" name="productMinStock" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="productDescription">Descripción</label>
+                        <textarea id="productDescription" name="productDescription" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="productImage">Imagen del Producto</label>
+                        <input type="file" id="productImage" name="productImage" accept="image/*">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="cancelBtn">Cancelar</button>
+                <button type="submit" class="btn btn-primary" id="saveProductBtn">Guardar Producto</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logotipo_dorado-e1594501755441-5226375-1.webp" alt="GoodFellas Pomade" class="logo-img">
+                    </div>
+                    <p class="footer-description">
+                        Productos de calidad suprema para el cuidado personal masculino. 
+                        Ingredientes naturales, aromas únicos, experiencia memorable.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="inventario.html">Inventario</a></li>
+                        <li><a href="index.html#manifiesto">Manifiesto</a></li>
+                        <li><a href="index.html#elaboracion">Elaboración</a></li>
+                        <li><a href="index.html#mayoreo">Mayoreo</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Redes Sociales</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Goodfellas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="inventario.js"></script>
+</body>
+</html>

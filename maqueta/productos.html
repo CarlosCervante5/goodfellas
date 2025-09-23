@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - GoodFellas Pomade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logotipo_dorado-e1594501755441-5226375-1.webp" alt="GoodFellas Pomade" class="logo-img">
+                </a>
+                
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="productos.html" class="nav-link active">Productos</a></li>
+                    <li><a href="index.html#manifiesto" class="nav-link">Manifiesto</a></li>
+                    <li><a href="index.html#elaboracion" class="nav-link">Elaboración</a></li>
+                    <li><a href="index.html#mayoreo" class="nav-link">Mayoreo</a></li>
+                    <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobile-sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <img src="assets/images/logotipo_dorado-e1594501755441-5226375-1.webp" alt="GoodFellas Pomade" class="logo-img">
+            </div>
+            <button class="sidebar-close" id="sidebar-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <ul class="sidebar-nav-list">
+                <li><a href="index.html" class="sidebar-nav-link">Inicio</a></li>
+                <li><a href="productos.html" class="sidebar-nav-link active">Productos</a></li>
+                <li><a href="index.html#manifiesto" class="sidebar-nav-link">Manifiesto</a></li>
+                <li><a href="index.html#elaboracion" class="sidebar-nav-link">Elaboración</a></li>
+                <li><a href="index.html#mayoreo" class="sidebar-nav-link">Mayoreo</a></li>
+                <li><a href="index.html#contacto" class="sidebar-nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Products Hero Section -->
+    <section class="products-hero">
+        <div class="products-hero-content">
+            <div class="container">
+                <h1 class="products-hero-title">NUESTROS PRODUCTOS</h1>
+                <p class="products-hero-subtitle">Descubre la calidad y autenticidad de GoodFellas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid Section -->
+    <section class="products-grid-section">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Producto 1: Pomada Original -->
+                <div class="product-card-large">
+                    <div class="product-image-large">
+                        <img src="assets/images/original140gWEB-2697956.webp" alt="Pomada Original" class="product-img-large">
+                    </div>
+                    <div class="product-info-large">
+                        <div class="product-badge">ORIGINAL</div>
+                        <h3 class="product-name-large">POMADA ORIGINAL</h3>
+                        <p class="product-description-large">El clásico que nunca pasa de moda. Fijación media con acabado natural.</p>
+                        <div class="product-specs">
+                            <span class="spec">140g</span>
+                            <span class="spec">Fijación Media</span>
+                            <span class="spec">Acabado Natural</span>
+                        </div>
+                        <button class="product-btn-large">COMPRAR</button>
+                    </div>
+                </div>
+
+                <!-- Producto 2: Pomada Textura -->
+                <div class="product-card-large">
+                    <div class="product-image-large">
+                        <img src="assets/images/t4extura140gWEB-2697856.webp" alt="Pomada Textura" class="product-img-large">
+                    </div>
+                    <div class="product-info-large">
+                        <div class="product-badge">TEXTURA</div>
+                        <h3 class="product-name-large">POMADA TEXTURA</h3>
+                        <p class="product-description-large">Acabado natural con volumen. Perfecta para estilos modernos.</p>
+                        <div class="product-specs">
+                            <span class="spec">140g</span>
+                            <span class="spec">Fijación Media</span>
+                            <span class="spec">Acabado Natural</span>
+                        </div>
+                        <button class="product-btn-large">COMPRAR</button>
+                    </div>
+                </div>
+
+                <!-- Producto 3: Pomada Strong -->
+                <div class="product-card-large">
+                    <div class="product-image-large">
+                        <img src="assets/images/strong140gWEB-2697915.webp" alt="Pomada Strong" class="product-img-large">
+                    </div>
+                    <div class="product-info-large">
+                        <div class="product-badge">STRONG</div>
+                        <h3 class="product-name-large">POMADA STRONG</h3>
+                        <p class="product-description-large">Máxima fijación y duración. Para estilos que requieren firmeza extrema.</p>
+                        <div class="product-specs">
+                            <span class="spec">140g</span>
+                            <span class="spec">Fijación Fuerte</span>
+                            <span class="spec">Duración Extendida</span>
+                        </div>
+                        <button class="product-btn-large">COMPRAR</button>
+                    </div>
+                </div>
+
+                <!-- Producto 4: Shampoo Azul -->
+                <div class="product-card-large">
+                    <div class="product-image-large">
+                        <img src="assets/images/SHAMPOOAZUL-1-5293342.webp" alt="Shampoo Azul" class="product-img-large">
+                    </div>
+                    <div class="product-info-large">
+                        <div class="product-badge">PREMIUM</div>
+                        <h3 class="product-name-large">SHAMPOO AZUL</h3>
+                        <p class="product-description-large">Limpieza profunda y cuidado. Para cabello saludable y brillante.</p>
+                        <div class="product-specs">
+                            <span class="spec">500ml</span>
+                            <span class="spec">Limpieza Profunda</span>
+                            <span class="spec">Cuidado Premium</span>
+                        </div>
+                        <button class="product-btn-large">COMPRAR</button>
+                    </div>
+                </div>
+
+                <!-- Producto 5: Shampoo Rojo -->
+                <div class="product-card-large">
+                    <div class="product-image-large">
+                        <img src="assets/images/SHAMPOOROJO-1-5293239.webp" alt="Shampoo Rojo" class="product-img-large">
+                    </div>
+                    <div class="product-info-large">
+                        <div class="product-badge">INTENSO</div>
+                        <h3 class="product-name-large">SHAMPOO ROJO</h3>
+                        <p class="product-description-large">Limpieza intensa y revitalizante. Para cabello que necesita cuidado especial.</p>
+                        <div class="product-specs">
+                            <span class="spec">500ml</span>
+                            <span class="spec">Limpieza Intensa</span>
+                            <span class="spec">Revitalizante</span>
+                        </div>
+                        <button class="product-btn-large">COMPRAR</button>
+                    </div>
+                </div>
+
+                <!-- Producto 6: Pomada 1LT -->
+                <div class="product-card-large">
+                    <div class="product-image-large">
+                        <img src="assets/images/1lt-2908257.webp" alt="Pomada 1LT" class="product-img-large">
+                    </div>
+                    <div class="product-info-large">
+                        <div class="product-badge">GRANDE</div>
+                        <h3 class="product-name-large">POMADA 1LT</h3>
+                        <p class="product-description-large">Tamaño familiar para uso prolongado. Ideal para barberías y salones.</p>
+                        <div class="product-specs">
+                            <span class="spec">1 Litro</span>
+                            <span class="spec">Uso Profesional</span>
+                            <span class="spec">Tamaño Familiar</span>
+                        </div>
+                        <button class="product-btn-large">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logotipo_dorado-e1594501755441-5226375-1.webp" alt="GoodFellas Pomade" class="logo-img">
+                        <span class="logo-text">GoodFellas</span>
+                    </div>
+                    <p class="footer-description">
+                        La hermandad del cuidado personal. Autenticidad, lealtad y calidad en cada producto.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="index.html#manifiesto">Manifiesto</a></li>
+                        <li><a href="index.html#elaboracion">Elaboración</a></li>
+                        <li><a href="index.html#mayoreo">Mayoreo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +52 55 1234 5678</p>
+                        <p><i class="fas fa-envelope"></i> info@goodfellas.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Ciudad de México, México</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 GoodFellas Pomade. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
