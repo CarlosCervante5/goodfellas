@@ -1,0 +1,19 @@
+{
+  "name": "goodfellas-website",
+  "version": "1.0.0",
+  "description": "Sitio web GoodFellas - Productos para barbería",
+  "main": "maqueta/index.html",
+  "scripts": {
+    "start": "npx serve maqueta -s",
+    "build": "echo 'No build step required for static site'"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  },
+  "keywords": ["barberia", "pomada", "goodfellas", "website"],
+  "author": "Carlos Cervantes",
+  "license": "MIT"
+}
