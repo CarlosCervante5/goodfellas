@@ -3476,3 +3476,301 @@ body {
         gap: var(--spacing-3xl);
     }
 }
+
+/* ========================================
+   HOW TO USE SECTION STYLES
+======================================== */
+
+.how-to-use {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a1a1a 50%, #2c3e50 100%);
+    padding: var(--spacing-5xl) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.how-to-use::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 70%, rgba(255, 215, 0, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 70% 30%, rgba(255, 215, 0, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.how-to-use-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+    position: relative;
+    z-index: 2;
+}
+
+.how-to-use-header {
+    text-align: center;
+    margin-bottom: var(--spacing-4xl);
+}
+
+.how-to-use-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    color: #1a1a1a;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: 25px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-lg);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.how-to-use-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.how-to-use-subtitle {
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.how-to-use-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-4xl);
+}
+
+.how-to-use-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: var(--spacing-2xl);
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.how-to-use-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.how-to-use-card:hover::before {
+    transform: scaleX(1);
+}
+
+.how-to-use-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 215, 0, 0.3);
+}
+
+.how-to-use-number {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffd700;
+    margin-bottom: var(--spacing-lg);
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    line-height: 1;
+}
+
+.how-to-use-content {
+    position: relative;
+    z-index: 2;
+}
+
+.how-to-use-card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.how-to-use-description {
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+    font-size: 0.95rem;
+}
+
+.how-to-use-tip {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background: rgba(255, 215, 0, 0.1);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 15px;
+    border-left: 3px solid #ffd700;
+    font-size: 0.85rem;
+    color: #ffd700;
+}
+
+.how-to-use-tip i {
+    font-size: 1rem;
+    color: #ffd700;
+}
+
+.how-to-use-video {
+    margin-bottom: var(--spacing-4xl);
+    display: flex;
+    justify-content: center;
+}
+
+.video-container {
+    max-width: 600px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.video-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #b0b0b0;
+    text-align: center;
+    padding: var(--spacing-2xl);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.video-placeholder:hover {
+    color: #ffd700;
+    background: rgba(255, 215, 0, 0.05);
+}
+
+.video-placeholder i {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-lg);
+    color: #ffd700;
+    transition: all 0.3s ease;
+}
+
+.video-placeholder:hover i {
+    transform: scale(1.1);
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.video-placeholder h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.video-placeholder p {
+    font-size: 0.95rem;
+    color: #b0b0b0;
+}
+
+.how-to-use-cta {
+    text-align: center;
+}
+
+/* Responsive How to Use Styles */
+@media (max-width: 768px) {
+    .how-to-use {
+        padding: var(--spacing-4xl) 0;
+    }
+    
+    .how-to-use-container {
+        padding: 0 20px 15px 20px;
+    }
+    
+    .how-to-use-header {
+        margin-bottom: var(--spacing-3xl);
+    }
+    
+    .how-to-use-title {
+        font-size: 1.7rem;
+    }
+    
+    .how-to-use-subtitle {
+        font-size: 1rem;
+        padding: 0 var(--spacing-md);
+    }
+    
+    .how-to-use-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+        padding: 0 var(--spacing-md);
+    }
+    
+    .how-to-use-card {
+        padding: var(--spacing-xl);
+        margin: 0 var(--spacing-sm);
+    }
+    
+    .how-to-use-number {
+        font-size: 2.5rem;
+    }
+    
+    .how-to-use-card-title {
+        font-size: 1.1rem;
+    }
+    
+    .how-to-use-tip {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-xs);
+    }
+    
+    .video-container {
+        margin: 0 var(--spacing-md);
+    }
+    
+    .video-placeholder i {
+        font-size: 3rem;
+    }
+    
+    .video-placeholder h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .how-to-use-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-xl);
+    }
+}
+
+@media (min-width: 1024px) {
+    .how-to-use-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--spacing-xl);
+    }
+}
